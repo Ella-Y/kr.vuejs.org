@@ -240,7 +240,7 @@ Vue also offers the `.passive` modifier, corresponding to [`addEventListener`'s 
 
 ### Key Codes
 
-<p class="tip">The use of `keyCode` events [is deprecated](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode) and may not be supported in new browsers.</p>
+<p class="tip">`KeyCode` 이벤트는 [권장되지 않으며](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode) 신형 브라우저에서 지원되지 않을 수 있습니다.</p>
 
 Using `keyCode` attributes is also permitted:
 
@@ -248,7 +248,7 @@ Using `keyCode` attributes is also permitted:
 <input v-on:keyup.13="submit">
 ```
 
-Vue provides aliases for the most commonly used key codes when necessary for legacy browser support:
+Vue는 레거시 브라우저 지원에 필요한 경우 가장 일반적으로 사용되는 키 코드에 대한 별칭을 제공합니다.:
 
 - `.enter`
 - `.tab`
