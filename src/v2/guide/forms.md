@@ -13,9 +13,9 @@ order: 10
 </p>
 
 `v-model` internally uses different properties and emits different events for different input elements:
-- text and textarea elements use `value` property and `input` event;
-- checkboxes and radiobuttons use `checked` property and `change` event;
-- select fields use `value` as a prop and `change` as an event.
+- text와 textarea 요소는 `value` 속성과 `input` 이벤트를 사용합니다.
+- 체크박스(checkbox)와 라디오버튼(radiobutton)은 `checked` 속성과 `change` 이벤트를 사용합니다.
+- 셀렉트의 `value` 는 prop으로, `change` 는 이벤트로 사용됩니다..
 
 <p class="tip" id="vmodel-ime-tip">[IME](https://en.wikipedia.org/wiki/Input_method) (중국어, 일본어, 한국어 등)가 필요한 언어의 경우 IME 중 `v-model`이 업데이트 되지 않습니다. 이러한 업데이트를 처리하려면 `input` 이벤트를 대신 사용하십시오.</p>
 
@@ -376,7 +376,7 @@ vm.selected.number // -> 123
 <input v-model.number="age" type="number">
 ```
 
-`type="number"`를 사용하는 경우에도 HTML 입력 엘리먼트의 값은 항상 문자열을 반환하기 때문에 이것은 종종 유용하게 사용할 수 있습니다. If the value cannot be parsed with `parseFloat()`, then the original value is returned.
+`type="number"`를 사용하는 경우에도 HTML 입력 엘리먼트의 값은 항상 문자열을 반환하기 때문에 이것은 종종 유용하게 사용할 수 있습니다. 만약 값이 `parseFloat()`로 변환할 수 없다면, 기존 입력 값이 반환됩니다.
 
 ### `.trim`
 
